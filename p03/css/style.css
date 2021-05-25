@@ -31,7 +31,17 @@ header{
 .conteudo{
   width: 100%;
   height:80vh;
+  display: flex;
+}
+
+.conteudo > div{
+  width: 70%;
   background-color:rebeccapurple;
+}
+
+aside{
+  width:30%;
+  background-color:sandybrown;
 }
 
 footer{
@@ -47,5 +57,19 @@ footer{
 
   main{
     width: 100%;
+  }
+
+  .conteudo{
+    flex-flow: column wrap;
+  }
+
+  .conteudo > div{
+    width: 100%;
+    height: 80%;
+  }
+
+  aside{
+    width: 100%;
+    height: 20%;
   }
 }
